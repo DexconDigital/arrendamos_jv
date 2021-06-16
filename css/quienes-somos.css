@@ -1,0 +1,274 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,800');
+.section {
+    position: relative;
+    display: block;
+    width: 100%;
+    min-height: 50px;
+    margin-top: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+.div-section-content.background-white.meet-the-team-div-section-content {
+    padding-bottom: 0px;
+}
+
+.div-section-content.background-white {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #fff;
+}
+.div-section-content {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    min-height: 50px;
+    padding-top: 75px;
+    padding-bottom: 75px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+    background-color: #fff;
+    text-align: left;
+}
+
+.about-team-member-div {
+    margin-right: auto;
+    margin-bottom: 100px;
+    margin-left: auto;
+}
+
+.h1.about-team-title {
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.h1 {
+    font-family:  'Open Sans', sans-serif;
+	font-weight:800;
+    font-size: 55px;
+    line-height: 60px;
+    font-weight: 500;
+}
+
+h1 {
+    margin-top: 20px;
+    margin-bottom: 10px;
+    font-family:  'Open Sans', sans-serif;
+	font-weight:800;
+    color: #3c274b;
+    font-size: 30px;
+    line-height: 65px;
+    font-weight: 500;
+}
+
+.collection-list {
+    margin-right: auto;
+    margin-left: auto;
+}
+.w-row:before, .w-row:after {
+    content: " ";
+    display: table;
+}
+
+.w-row:after {
+    clear: both;
+}
+
+.w-row:after {
+    content: " ";
+    display: table;
+}
+
+.about-team-collection-item:hover {
+    z-index: 100;
+    overflow: visible;
+    height: 250px;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+}
+.about-team-collection-item {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    height: 250px;
+    padding: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+.about-team-collection-item2 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    overflow: hidden;
+    height: 250px;
+    padding: 0px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-pack: start;
+    -webkit-justify-content: flex-start;
+    -ms-flex-pack: start;
+    justify-content: flex-start;
+    -webkit-box-align: stretch;
+    -webkit-align-items: stretch;
+    -ms-flex-align: stretch;
+    align-items: stretch;
+}
+
+.w-col-3 {
+    width: 25%;
+}
+
+.w-col {
+    position: relative;
+    float: left;
+    min-height: 1px;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.div-block-19 {
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.about-team-member-card {
+    position: relative;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 5px;
+    margin-left: 5px;
+    padding: 20px 25px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+
+.about-team-member-photo {
+    display: block;
+    width: 150px;
+    height: 150px;
+    max-height: 150px;
+    max-width: 150px;
+    min-height: 150px;
+    min-width: 150px;
+    margin-top: 5px;
+    margin-right: auto;
+    margin-left: auto;
+    border-radius: 50%;
+}
+.h3.about-team-member-title {
+        text-transform: capitalize;
+    	font-family:  'Open Sans', sans-serif;
+	font-weight:800;
+    color: #606060;
+    width: 100%;
+    text-align: center;
+}
+
+.h4.about-team-member-position {
+    font-family:  'Open Sans', sans-serif;
+	font-weight:800;
+    width: 100%;
+    margin-top: -8px;
+    padding-top: 0px;
+    color: #000;
+    text-align: center;
+
+}
+ .h4.about-team-member-position:hover{
+    color:#606060;
+
+}
+
+.about-team-member-bio {
+
+    margin-top: 0px;
+    text-transform: none;
+   	font-family:  'Open Sans', sans-serif;
+	font-weight:400;
+    color: #FFF;
+    font-size: 13px;
+    line-height: 18px;
+    width: 100%;
+    text-align: center;
+}
+
+
+.about-team-member-card:hover {
+    padding: 0px 0px;
+    -webkit-box-align: start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+    border-radius: 5px;
+    background-color: #FF5033EB;
+    color: #606060 ;
+}
+.about-team-member-title:hover{
+    color:white;
+}
+
+
+
+img.about-team-member-photo:hover {
+    transform: scale(1.4);
+}

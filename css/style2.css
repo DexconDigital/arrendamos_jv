@@ -1,0 +1,78 @@
+.banner{
+    /*IMPORTANTE*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:#da251c
+}
+.banner h3{
+    font-size: 7em;
+}
+.latest-agileits-grids {
+    margin-top: 5em;
+}
+.tamanoIcono{
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 6px;
+}
+.tamanoIcono-llamada{
+    font-size: 30px;
+    border-radius: 50%;
+    padding: 6px;
+    margin-top: 40%;
+}
+.center-mail{
+    padding-top: 1%;
+}
+
+@media(max-width:768px){
+    .banner h3{
+        font-size: 5em;
+    }
+    h3#contacto{
+        font-size: 4em;
+    }
+    div.property-search-area .property-search-form2{
+        top: -160px;
+        }
+    #news{
+        padding: 0em 0 1em 0;
+    }
+    .latest-agileits-grids {
+        margin-top: -12em;
+    }
+}
+
+@media(max-width:480px){
+    .center, .center-mail {
+        text-align: center;
+    }
+    .espacio{
+        margin-bottom: 0.5em;
+    }
+    .banner h3{
+        font-size: 3em;
+    }
+    h3#contacto{
+        font-size:2em;  
+    }
+    div.property-search-area .property-search-form2{
+        top: -360px;
+    }
+    .latest-agileits-grids {
+        margin-top: -5em;
+    }
+    .news-inmueble {
+        margin-top: 550px;
+    }
+}
+@media (max-width: 375px){
+    div.property-search-area .property-search-form2{
+    top: -360px;
+    }
+    .latest-agileits-grids {
+        margin-top: 0em;
+    }
+}
+
