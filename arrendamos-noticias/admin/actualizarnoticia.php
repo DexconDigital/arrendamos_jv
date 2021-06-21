@@ -107,7 +107,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <a href="index.php"><i class="fa fa-dashboard fa-fw nav_icon"></i>Panel de Control</a>
                         </li>
                         <li>
-                            <a href="estadisticas.php"><i class="fa fa-bar-chart-o nav_icon"></i>Estadisticas</a>
+                            <!--<a href="estadisticas.php"><i class="fa fa-bar-chart-o nav_icon"></i>Estadisticas</a>-->
                         </li>
                         <li>
                             <a href="noticias.php"><i class="fa fa-indent nav_icon"></i>Gestionar Noticias<span class="fa arrow"></span></a>
