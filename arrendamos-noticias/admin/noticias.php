@@ -128,8 +128,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <tbody>
 
                                 <?php 
+                                $id_inmobiliaria2 = $res[0];
                                 $con=Conect();
-                                $qry="select * from noticias where id_inmobiliaria2 = 1 order by id DESC ";
+                                $qry="select * from noticias where id_inmobiliaria2 = $id_inmobiliaria2 order by id DESC ";
                                 $result = $con->prepare( $qry );
                                 $result->execute();
                                 $resultado = $result->fetchAll();
