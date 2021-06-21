@@ -82,7 +82,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle avatar" data-toggle="dropdown">
                         <?php
-                            $user="arrendamosjv";
+                            $user = $_SESSION["usuarioactual"];
                             $con=Conect();
                             $qry="SELECT * FROM usuarios where usuario ='$user'";
                             $result = $con->prepare( $qry );
@@ -129,8 +129,9 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
         </nav>
         <?php
             $id=$_GET["id"];
+            $id_inmobiliaria2 = $res[0];
             $con=Conect();
-            $qry="SELECT * FROM noticias where id ='$id' and id_inmobiliaria2 = 1";
+            $qry="SELECT * FROM noticias where id ='$id' and id_inmobiliaria2 = $id_inmobiliaria2";
             $result = $con->prepare( $qry );
             $result->execute();
             $res= $result->fetch();                               

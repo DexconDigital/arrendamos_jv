@@ -82,7 +82,7 @@ require_once("conexion.php");?>
                 <li class="dropdown">
                     <a href="#" class="dropdown-toggle avatar" data-toggle="dropdown">
                         <?php
-                            $user="arrendamosjv";
+                            $user=$_SESSION["usuarioactual"];
                             $con=Conect();
                             $qry="SELECT * FROM usuarios where usuario ='$user'";
                             $result = $con->prepare( $qry );
