@@ -1,12 +1,3 @@
-<?php
-require_once( "js/bd_function.php" );
-$id = 1;
-$con = Conect();
-$qry = "SELECT * FROM estadisticas where id ='$id'";
-$result = $con->prepare( $qry );
-$result->execute();
-$res =  $result->fetch();
-?>
 <html lang="es">
 
 <!-- Mirrored from p.w3layouts.com/demos_new/30-01-2017/pro_property-demo_Free/1675550087/web/index.php by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Aug 2018 16:07:30 GMT -->
