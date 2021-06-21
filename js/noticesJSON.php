@@ -7,7 +7,7 @@ require_once( "bd_function.php" );
 $con = Conect();
 $array = array();
 
-$sql = "SELECT * FROM noticias  where id_inmobiliaria2 = 1 order by id desc";
+$sql = "SELECT * FROM noticias  where id_inmobiliaria2 = 18 order by id desc";
 $result = $con->prepare( $sql );
 $result->execute();
 $resultado = $result->fetchAll();
