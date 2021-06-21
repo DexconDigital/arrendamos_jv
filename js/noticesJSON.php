@@ -1,29 +1,32 @@
 <?php
 
-header('Access-Control-Allow-Origin: *'); 
+header( 'Access-Control-Allow-Origin: *' );
 
-require_once("bd_function.php");
+require_once( "bd_function.php" );
 
-$link = Conect();
+$con = Conect();
 $array = array();
 
-    $sql = "SELECT * FROM noticias  where id_inmobiliaria2 = 1 order by id desc";
-    $result = mysqli_query($link, $sql) or die(mysqli_error($link));
-    while ($field = mysqli_fetch_array($result)) {
-        $nombre = $field['nombre'];
-        $id = $field['id'];
-        $descripcion = $field['descripcion'];
-        $imagen = $field['imagen'];
-        $noticia = $field['noticia'];
-        $fecha = $field['fecha'];
-        $array[] = array(
-            'titulo' => $nombre,
-            'id' => $id,
-            'descripcion' => $descripcion,
-            'imagen' => $imagen,
-            'noticia' => $noticia,
-            'fecha' => $fecha
-        );
-    }
-$json_string = json_encode($array, JSON_UNESCAPED_UNICODE);
+$sql = "SELECT * FROM noticias  where id_inmobiliaria2 = 1 order by id desc";
+$result = $con->prepare( $sql );
+$result->execute();
+$resultado = $result->fetchAll();
+
+foreach ( $resultado as $key => $field ) {
+    $nombre = $field['nombre'];
+    $id = $field['id'];
+    $descripcion = $field['descripcion'];
+    $imagen = $field['imagen'];
+    $noticia = $field['noticia'];
+    $fecha = $field['fecha'];
+    $array[] = array(
+        'titulo' => $nombre,
+        'id' => $id,
+        'descripcion' => $descripcion,
+        'imagen' => $imagen,
+        'noticia' => $noticia,
+        'fecha' => $fecha
+    );
+}
+$json_string = json_encode( $array, JSON_UNESCAPED_UNICODE );
 echo $json_string;
