@@ -17,13 +17,14 @@ require_once("conexion.php");?>
     <meta name="keywords" content="Modern Responsive web template, Bootstrap Web Templates, Flat Web Templates, Andriod Compatible web template, 
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyErricsson, Motorola web design" />
     <script type="application/x-javascript">
-    addEventListener("load", function() {
-        setTimeout(hideURLbar, 0);
-    }, false);
+        addEventListener("load", function() {
+            setTimeout(hideURLbar, 0);
+        }, false);
 
-    function hideURLbar() {
-        window.scrollTo(0, 1);
-    }
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+
     </script>
     <!-- Bootstrap Core CSS -->
     <link href="css/bootstrap.min.css" rel='stylesheet' type='text/css' />
@@ -68,9 +69,10 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                         $user= $_SESSION["usuarioactual"] ;
                         $con=Conect();
                         $qry="SELECT * FROM usuarios where usuario ='$user'";
-                        $sql=mysqli_query($con,$qry);
-                        $res=  mysqli_fetch_array($sql) ;                            
-                    ?>
+                        $result = $con->prepare( $qry );
+                        $result->execute();
+                        $res= $result->fetch();               
+                        ?>
                         <img src="<?php echo $res[7]; ?>">
                     </a>
                     <ul class="dropdown-menu">
@@ -92,8 +94,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
                             <a href="estadisticas.php"><i class="fa fa-bar-chart-o nav_icon"></i>Estadisticas</a>
                         </li>
                         <li>
-                            <a href="noticias.php"><i class="fa fa-indent nav_icon"></i>Gestionar Noticias<span
-                                    class="fa arrow"></span></a>
+                            <a href="noticias.php"><i class="fa fa-indent nav_icon"></i>Gestionar Noticias<span class="fa arrow"></span></a>
                             <ul class="nav nav-second-level">
                                 <li>
                                     <a href="noticias.php">Listar Noticias</a>
