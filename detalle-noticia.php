@@ -6,11 +6,14 @@ require_once("js/bd_function.php");
 
 $codigo = $_GET["codigo"];
 
-$link = Conect();
+$con = Conect();
 
 $sql = "SELECT * FROM noticias WHERE id = $codigo";
-$result = mysqli_query($link, $sql) or die(mysqli_error($link));
-while ($field = mysqli_fetch_array($result)) {
+$result = $con->prepare( $sql );
+$result->execute();
+$resultado = $result->fetchAll();
+    
+foreach ( $resultado as $key => $field ) {
     $nombre = $field['nombre'];
     $id = $field['id'];
     $descripcion = $field['descripcion'];
