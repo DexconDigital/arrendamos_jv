@@ -24,13 +24,13 @@ $con = Conect();
 copy( $rutas, $destinos );
 
 if ( $nombre_ar != "" ) {
-    $sql = ( "INSERT INTO `noticias` (`id`, `nombre`, `descripcion`, `imagen`, `archivo`, `noticia`, `fecha`, `id_inmobiliaria2`) VALUES (NULL, '$nombre', '$descripcion', '$destino', '$destinos', '$noticia', '$fecha', '1')" );
+    $sql = ( "INSERT INTO `noticias` (`id`, `nombre`, `descripcion`, `imagen`, `archivo`, `noticia`, `fecha`, `id_inmobiliaria2`) VALUES (NULL, '$nombre', '$descripcion', '$destino', '$destinos', '$noticia', '$fecha', '18')" );
     $result = $con->prepare( $sql );
     $result->execute();
 
     header( "Location: noticias.php" );
 } else {
-    $sql = ( "INSERT INTO `noticias` (`id`, `nombre`, `descripcion`, `imagen`, `archivo`, `noticia`, `fecha`, `id_inmobiliaria2`) VALUES (NULL, '$nombre', '$descripcion', '$destino', 'null', '$noticia', '$fecha', '1')" );
+    $sql = ( "INSERT INTO `noticias` (`id`, `nombre`, `descripcion`, `imagen`, `archivo`, `noticia`, `fecha`, `id_inmobiliaria2`) VALUES (NULL, '$nombre', '$descripcion', '$destino', 'null', '$noticia', '$fecha', '18')" );
     $result = $con->prepare( $sql );
     $result->execute();
 
