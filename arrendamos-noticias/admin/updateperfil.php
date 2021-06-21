@@ -14,7 +14,7 @@ $comparador = "images/";
 
 if ( $destino == $comparador ) {
     $con = Conect();
-    $qry = ( "update usuarios set usuario='$usuario', password='$pass', nombre='$nombre', telefono='$telefono', cargo='$cargo', dependencia='$dependencia' where id='$id'" );
+    $qry = ( "update usuarios set usuario='$usuario', password='$pass', nombre='$nombre', telefono='$telefono', cargo='$cargo', dependencia='$dependencia' where id_user='$id'" );
     $result = $con->prepare( $qry );
     $result->execute();
     
@@ -22,7 +22,7 @@ if ( $destino == $comparador ) {
     $con = Conect();
     copy( $ruta, $destino );
 
-    $qry = ( "update usuarios set usuario='$usuario', password='$pass', nombre='$nombre', telefono='$telefono', cargo='$cargo', dependencia='$dependencia', imagen='$destino' where id='$id '" );
+    $qry = ( "update usuarios set usuario='$usuario', password='$pass', nombre='$nombre', telefono='$telefono', cargo='$cargo', dependencia='$dependencia', imagen='$destino' where id_user='$id '" );
     $result = $con->prepare( $qry );
     $result->execute();
 
