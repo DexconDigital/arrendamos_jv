@@ -9,7 +9,7 @@ $.ajax({
                 '<img src="arrendamos-noticias/admin/' + data[j].imagen + '" alt="' + data[j].descripcion + '"  class="img-responsive" style="height:300px" />' +
                 '<div class="news-grid-info">'+
                 '<h4 style="width:100%"><span>' + data[j].titulo + '</span></h4>' +
-                '<div class="buttton ver-mas"><a href="detalle-noticia.php?codigo=' + data[j].id + '">Ver más</a></div>' +
+                '<div class="buttton ver-mas" style="margin-top:10px!important;"><a href="detalle-noticia.php?codigo=' + data[j].id + '">Ver más</a></div>' +
                 '</div>' +
                 '</div>' +
                 '</div>';
