@@ -109,7 +109,7 @@
                         </li>
                         <li>
                             <div class="slider-info slide-altura" style="background-image: url(images/slide_3.jpg) ;">
-                                <h3><span class="counter" id="counter-experence2"></span> Años</h3>
+                                <h3><label id="counter-experence2"></label> Años</h3>
                                 <p>Comprometidos con nuestros clientes </p>
                             </div>
                         </li>
