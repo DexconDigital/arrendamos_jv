@@ -17,13 +17,15 @@ setTimeout(() => {
       var fecha = new Date();
       var ano = fecha.getFullYear();
       //  Colocar el año de creacion de la empresa
-      const CREATECOMPANY = 2015;
+      const CREATECOMPANY = 1999;
       var total = ano - CREATECOMPANY;
       
       // buscar el id en el dom y imprimir el resultado
       let contador = new CountUp("counter-experence",0,total,N_INIT,TIME);
+      let contador2 = new CountUp("counter-experence2",0,total,N_INIT,TIME);
 
       contador.start();
+      contador2.start();
 
       //  Iniciar el  efecto segun la posicion del scroll
    }
