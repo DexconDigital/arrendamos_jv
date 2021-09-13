@@ -53,7 +53,7 @@
         '</li>' +
         '<li>' +
         '<i class="glyphicon glyphicon-earphone" aria-hidden="true"></i>' +
-        '<a href="tel:0319260402" target="_blank">(+571) 9260 402</a>' +
+        '<a href="tel:0319260402" target="_blank">(601) 9260 402</a>' +
         '</li >' +
         '<li>' +
         '<i class="glyphicon fa fa-whatsapp" aria-hidden="true"></i>' +
