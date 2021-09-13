@@ -148,7 +148,7 @@ Smartphone Compatible web template, free web designs for Nokia, Samsung, LG, Son
                                                     <i class="glyphicon glyphicon-earphone tamanoIcono-llamada" aria-hidden="true" style="color: #da251c; border: 1px solid #da251c;"></i>
                                                 </div>
                                                 <div class="col-xs-12 col-sm-7 col-md-7 center">
-                                                    <a href="tel:0319260402" target="_blank" style="color:#000000">Fijo: (+571) 9260402 </a> <br>
+                                                    <a href="tel:6019260402" target="_blank" style="color:#000000">Fijo: (601) 9260402 </a> <br>
                                                     <a href="tel:3177413889" target="_blank" style="color:#000000">Comercial: (+57) 3177413889</a> <br>
                                                     <a href="tel:3177378351" target="_blank" style="color:#000000">Contabilidad: (+57) 3177378351</a> <br>
                                                     <a href="tel:3108567102" target="_blank" style="color:#000000">Administrativo: (+57) 3108567102</a> <br>
